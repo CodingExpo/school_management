@@ -1,0 +1,92 @@
+/*!
+ * Start Bootstrap - Shop Homepage HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+ body {
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+ }
+ 
+ .panel-heading{ background:#000;}
+ .slide-image {
+     width: 100%;
+ }
+ 
+ .h4, h4{  color:#fff;}
+ 
+ .h3, h3{ color:#093b78;}
+ 
+ .carousel-holder {
+     margin-bottom: 30px;
+ }
+ 
+ .carousel-control,
+ .item {
+     border-radius: 4px;
+ }
+ 
+ .caption {
+     height: 130px;
+     overflow: hidden;
+ }
+ 
+ .caption h4 {
+     white-space: nowrap;
+ }
+ 
+ .thumbnail img {
+     width: 100%;
+ }
+ 
+ .ratings {
+     padding-right: 10px;
+     padding-left: 10px;
+     color: #d17581;
+ }
+ 
+ .thumbnail {
+     padding: 0;
+ }
+ 
+ .thumbnail .caption-full {
+     padding: 9px;
+     color: #333;
+ }
+ 
+ footer {
+     margin: 5px 0; font-size:12px;
+ }
+ 
+ 
+ 
+ .logo-text{ color:#fff; font-size:40px; font-family:Eras Demi ITC; line-height:30px; padding:1% 0%; }
+ .logo-text strong{ color:#fff; font-size:22px;font-family:Arial, Helvetica, sans-serif; text-align:justify; letter-spacing:5px;}
+ 
+ .list-grp{}
+ .list-grp ul { margin:0px; padding:0px;}
+ .list-grp ul li{list-style:none; color:#000; background:url(../images/tick.png) no-repeat left; line-height:25px; border-bottom:dashed #ccc 1px;}
+ .list-grp ul li a{ text-decoration:none; color:#093b78; padding-left:19px;}
+ 
+ .list-grp ul li a:hover{ text-decoration:none;  background:#093b78 url(../images/tick_hover.png) no-repeat left;color:#fff; display:block;}
+ 
+ 
+ 
+ 
+ .list-right{}
+ .list-right ul { margin:0px; padding:0px;}
+ .list-right ul li{list-style:none; color:#000;  line-height:25px; border-bottom:dashed #ccc 1px; background:url(../images/tick.png) no-repeat left;  }
+ .list-right ul li a{ text-decoration:none; color:#093b78; padding-left:19px;}
+ .list-right ul li a:hover{ text-decoration:none;  background:#093b78 url(../images/tick_hover.png) no-repeat left; color:#fff; display:block;}
+ 
+ 
+ 
+ .middle-content{ max-height:380px; overflow-y:scroll; padding:5px;}
+ 
+ .sub-heading{ font-size:18px; color:#093b78;}
+ 
+ 
+ 
+ 
+ 
+ 
