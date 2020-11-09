@@ -1,0 +1,157 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <style>
+        input[type=text],
+        input[type=date],
+        input[type=password],
+        input[type=email],
+        input[type=file],
+        #sel {
+            width: 80%;
+            background-color: rgb(32, 32, 32);
+            color: cornsilk;
+            height: 35px;
+            font-size: 20px;
+            outline: none;
+            margin: auto;
+        }
+        
+        label {
+            color: cornsilk;
+            font-size: 17px;
+            margin: auto;
+        }
+    </style>
+</head>
+<header>
+    <div id="mySidenav" class="sidenav">
+        <div class="overflow-auto" style="overflow: auto;"><br>
+            <span style="font-size: 30px;color:rgb(163, 159, 159); display:block;padding: 0px 0px 0px 15px;">School ERP</span>
+            <hr>
+            <a href="../dashboard.html"><i class="fa fa-tachometer" aria-hidden="true" style="color: chartreuse;"></i> Dashboard</a>
+            <hr>
+            <div class="dropdown">
+                <a id="departmentsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-menu-desk mdl-navigation__link " href="#"><i class="fa fa-user-circle" aria-hidden="true" style="color:rgb(241, 191, 25);"></i> Manage Students
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="departmentsDropdown">
+                    <li class="dropdown-submenu" style="position:relative; ">
+                        <a tabindex="-1" href="all_students.html">All Students </a>
+                        <a tabindex="-1" href="all_students_dues.html">All Student Dues </a>
+                        <a tabindex="-1" href="add_student.html">Add Students </a>
+                        <a tabindex="-1" href="add_students_dues.html">Add Student Dues </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <a href="#"><i class="fa fa-user-circle" aria-hidden="true" style="color:rgb(228, 225, 51);"></i> Manage Teachers</a>
+            <hr>
+            <a href="#"><i class="fa fa-user-circle" aria-hidden="true" style="color:rgb(230, 85, 18);"></i> Manage Parents</a>
+            <hr>
+            <a href="#"><i class="fa fa-sticky-note" aria-hidden="true" style="color:rgb(49, 128, 160);"></i> Attendance</a>
+            <hr>
+            <a href="#"><i class="fa fa-sticky-note" aria-hidden="true" style="color:rgb(121, 123, 124);"></i> Assignments</a>
+            <hr>
+            <a href="#"><i class="fa fa-sticky-note" aria-hidden="true" style="color:rgb(252, 194, 5);"></i> Result</a>
+            <hr>
+            <a href="#"><i class="fa fa-calendar" aria-hidden="true" style="color:rgb(243, 240, 91);"></i> Events</a>
+            <hr>
+            <a href="#"><i class="fa fa-credit-card" aria-hidden="true" style="color:rgb(47, 73, 219);"></i> Collect Fees</a>
+            <hr>
+            <a href="#"><i class="fa fa-credit-card" aria-hidden="true" style="color:rgb(19, 185, 197);"></i> Pay Salary</a>
+            <hr>
+            <a href="#"><i class="fa fa-credit-card" aria-hidden="true" style="color:rgb(24, 240, 175);"></i> Expenses</a>
+            <hr>
+            <a href="#"><i class="fa fa-book" aria-hidden="true" style="color:rgb(235, 1, 79);"></i> Library</a>
+            <hr>
+            <a href="#"><i class="fa fa-bus" aria-hidden="true" style="color:rgb(207, 243, 6);"></i> Transportation</a>
+            <hr>
+            <a href="#"><i class="fa fa-building" aria-hidden="true" style="color:rgb(167, 168, 173);"></i> Classes</a>
+            <hr>
+            <a href="#"><i class="fa fa-bars" aria-hidden="true" style="color:rgb(145, 214, 118);"></i> Subjects</a>
+            <hr>
+            <a href="#"><i class="fa fa-user-circle" aria-hidden="true" style="color:rgb(8, 255, 90);"></i> Update Profile</a>
+            <hr>
+            <a href="#"><i class="fa fa-sign-out" aria-hidden="true" style="color:rgb(255, 0, 0);"></i> Log Out</a>
+            <br>
+        </div>
+    </div>
+    <div class="head">
+        <span style="font-size:35px;cursor:pointer;color:rgb(163, 159, 159);margin-left:0.5em;" id="open" onclick="openNav()">&#9776;</span>
+        <a href="javascript:void(0)" class="closebtn" id="close" onclick="closeNav()" style="font-size:35px;cursor:pointer;color:rgb(163, 159, 159);margin-left:0.5em;">&times;</a>
+
+    </div>
+</header>
+<br><br><br>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <center>
+                <h3 style="color: cornsilk;display:inline-block;border:cornsilk solid 1px;padding:7px;border-radius:5px"><i class="fa fa-credit-card" aria-hidden="true" style="color: cornsilk;"></i> Add Students</h3><br><br><br>
+
+                 </center>
+            </div>
+            <form action="#" method="POST">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-5">
+                        <center>
+                            <label>Full Name</label><br>
+                            <input type="text" name="name" placeholder="Enter Full Name" required><br><br>
+                            <label>Username</label><br>
+                            <input type="text" name="name" placeholder="Enter Username" required><br><br>
+                            <label>Password</label><br>
+                            <input type="password" name="name" placeholder="Enter Password" required><br><br>
+                            <label>Address</label><br>
+                            <input type="text" name="name" placeholder="Enter Address" required><br><br>
+                            <label>Class</label><br>
+                            <input type="text" name="name" placeholder="Enter Class" required><br><br>
+                            <label>Joining Date</label><br>
+                            <input type="date" name="name" required><br><br>
+                        </center>
+                    </div>
+
+                    <div class="col-sm-5">
+                        <center>
+                            <label>Roll Id</label><br>
+                            <input type="text" name="name" placeholder="Enter Roll Id" required><br><br>
+                            <label>Email</label><br>
+                            <input type="email" name="name" placeholder="Enter Email" required><br><br>
+                            <label>Gender</label><br>
+                            <input type="radio" name="opt1" id="a"><label> Male</label>
+                            <input type="radio" name="opt1" id="b"><label> Female</label>
+                            <br><br>
+                            <label>Phone Number</label><br>
+                            <input type="text" name="name" placeholder="Enter Phone Number" required><br><br>
+                            <label>Profile pic</label><br>
+                            <input type="file" name="name" placeholder="Choose Image" required style="height:30px"><br>
+                            <label>Transportation</label><br>
+                            <select id="sel">
+                                <option>No Transport</option>
+                                <option>Self</option>
+                                <option>School</option>
+                            </select><br><br>
+                            <button id="bttn">Add Student</button>
+                        </center>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br><br><br>
+</body>
+
+</html>
