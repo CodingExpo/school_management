@@ -1,0 +1,250 @@
+ /* width */
+ 
+ ::-webkit-scrollbar {
+     width: 3.5px;
+ }
+ /* Track */
+ 
+ ::-webkit-scrollbar-track {
+     background: #f1f1f1;
+ }
+ /* Handle */
+ 
+ ::-webkit-scrollbar-thumb {
+     background: #888;
+ }
+ /* Handle on hover */
+ 
+ ::-webkit-scrollbar-thumb:hover {
+     background: #555;
+ }
+ 
+ body {
+     font-family: "Lato", sans-serif;
+     background-color: rgb(56, 55, 55);
+ }
+ 
+ #bttn {
+     background-color: rgb(11, 198, 245);
+     border: none;
+     border-radius: 5px;
+     padding: 5px;
+     cursor: pointer;
+     outline: none;
+ }
+ 
+ #bttn:hover {
+     background-color: azure;
+     color: rgb(11, 198, 245);
+ }
+ 
+ .head {
+     background-color: rgb(27, 27, 27);
+     position: fixed;
+     width: 100%;
+     top: 0;
+     left: 0;
+     height: 50px;
+     color: rgb(228, 225, 51);
+     z-index: 1;
+ }
+ 
+ .sidenav {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background-color: rgb(31, 30, 30);
+     overflow-x: hidden;
+     transition: 0.5s;
+     padding-top: 60px;
+ }
+ 
+ .sidenav a {
+     padding: 0px 0px 0px 15px;
+     text-decoration: none;
+     font-size: 18px;
+     color: #818181;
+     display: block;
+     transition: 0.3s;
+     margin-top: -0.5em;
+     margin-bottom: -0.5em;
+ }
+ 
+ .sidenav a:hover {
+     color: #f1f1f1;
+ }
+ 
+ .sidenav .closebtn {
+     position: absolute;
+     top: 5px;
+     right: 10px;
+     font-size: 40px;
+     margin-left: 50px;
+ }
+ 
+ @media screen and (max-height: 450px) {
+     .sidenav {
+         padding-top: 15px;
+     }
+     .sidenav a {
+         font-size: 18px;
+     }
+ }
+ 
+ #close {
+     display: none;
+     text-decoration: none;
+     transition: 0.3s;
+ }
+ 
+ .box-1 {
+     background-color: rgb(13, 215, 241);
+     height: 150px;
+     width: 100%;
+     border-radius: 5px;
+     transition: transform 0.2s;
+ }
+ 
+ .box-1:hover {
+     transform: scale(0.9);
+     cursor: pointer;
+ }
+ 
+ .box-2:hover {
+     transform: scale(0.9);
+     cursor: pointer;
+ }
+ 
+ .box-3:hover {
+     transform: scale(0.9);
+     cursor: pointer;
+ }
+ 
+ .box-4:hover {
+     transform: scale(0.9);
+     cursor: pointer;
+ }
+ 
+ .box-2 {
+     background-color: rgb(65, 235, 65);
+     height: 150px;
+     width: 100%;
+     border-radius: 5px;
+     transition: transform 0.2s;
+ }
+ 
+ .box-3 {
+     background-color: rgb(235, 96, 61);
+     height: 150px;
+     width: 100%;
+     border-radius: 5px;
+     transition: transform 0.2s;
+ }
+ 
+ .box-4 {
+     background-color: rgb(155, 172, 9);
+     height: 150px;
+     width: 100%;
+     border-radius: 5px;
+     transition: transform 0.2s;
+ }
+ 
+ .box-5 {
+     background-color: rgb(46, 45, 45);
+     border-radius: 5px;
+ }
+ 
+ .table th {
+     color: whitesmoke;
+     text-align: center;
+ }
+ 
+ .table tr {
+     color: whitesmoke;
+     text-align: center;
+ }
+ 
+ .dropdown-submenu {
+     position: relative;
+     height: auto;
+     width: 140%;
+     background-color: rgb(44, 43, 43);
+     color: rgb(163, 163, 160);
+ }
+ 
+ .dropdown-menu .dropdown-submenu a {
+     padding: 10px;
+     color: rgb(167, 161, 161);
+     outline: none;
+     text-align: center;
+ }
+ 
+ .dropdown-submenu .dropdown-menu {
+     margin-top: 1em;
+     margin-left: 1em;
+ }
+ 
+ .btns button {
+     background-color: rgb(43, 41, 41);
+     outline: none;
+ }
+ 
+ @media screen and (min-width:1168px) and (max-width:1468px) {
+     #mySidenav {
+         width: 250px;
+     }
+     #open {
+         display: none;
+     }
+     #close {
+         display: none;
+     }
+     #dash {
+         margin-left: -7em;
+     }
+     h3 {
+         margin-left: 9em;
+     }
+ }
+ 
+ @media screen and (min-width:1468px) and (max-width:1768px) {
+     #mySidenav {
+         width: 300px;
+     }
+     #open {
+         display: none;
+     }
+     #close {
+         display: none;
+     }
+     #dash {
+         margin-left: -7em;
+     }
+ }
+ 
+ @media screen and (min-width:968px) and (max-width:1167px) {
+     #mySidenav {
+         width: 250px;
+     }
+     #open {
+         display: none;
+     }
+     #close {
+         display: none;
+     }
+ }
+ 
+ @media screen and (min-width:764px) and (max-width:967px) {
+     #mySidenav {
+         width: 200px;
+     }
+     #open {
+         display: none;
+     }
+     #close {
+         display: none;
+     }
+ }
