@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,9 +54,27 @@
                 </ul>
             </div>
             <hr>
-            <a href="#"><i class="fa fa-user-circle" aria-hidden="true" style="color:rgb(228, 225, 51);"></i> Manage Teachers</a>
+            <div class="dropdown">
+                <a id="departmentsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-menu-desk mdl-navigation__link " href="#"><i class="fa fa-user-circle" aria-hidden="true" style="color:rgb(251, 255, 0);"></i> Manage Teachers
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="departmentsDropdown">
+                    <li class="dropdown-submenu" style="position:relative; ">
+                        <a tabindex="-1" href="../teacher/all_teacher.html">All Teachers </a>
+                        <a tabindex="-1" href="../teacher/add_teacher.html">Add Teachers </a>
+                    </li>
+                </ul>
+            </div>
             <hr>
-            <a href="#"><i class="fa fa-user-circle" aria-hidden="true" style="color:rgb(230, 85, 18);"></i> Manage Parents</a>
+            <div class="dropdown">
+                <a id="departmentsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-menu-desk mdl-navigation__link " href="#"><i class="fa fa-user-circle" aria-hidden="true" style="color:rgb(255, 136, 0);"></i> Manage Parents
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="departmentsDropdown">
+                    <li class="dropdown-submenu" style="position:relative; ">
+                        <a tabindex="-1" href="../parent/all_parent.html">All Parents </a>
+                        <a tabindex="-1" href="../parent/add_parent.html">Add Parents </a>
+                    </li>
+                </ul>
+            </div>
             <hr>
             <a href="#"><i class="fa fa-sticky-note" aria-hidden="true" style="color:rgb(49, 128, 160);"></i> Attendance</a>
             <hr>
@@ -100,9 +119,9 @@
         <div class="row">
             <div class="col-sm-12">
                 <center>
-                <h3 style="color: cornsilk;display:inline-block;border:cornsilk solid 1px;padding:7px;border-radius:5px"><i class="fa fa-credit-card" aria-hidden="true" style="color: cornsilk;"></i> Add Students</h3><br><br><br>
+                    <h3 style="color: cornsilk;display:inline-block;border:cornsilk solid 1px;padding:7px;border-radius:5px"><i class="fa fa-credit-card" aria-hidden="true" style="color: cornsilk;"></i> Add Students</h3><br><br><br>
 
-                 </center>
+                </center>
             </div>
             <form action="#" method="POST">
                 <div class="row">
