@@ -1,4 +1,4 @@
-<html lang="en">
+ <html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -76,9 +76,29 @@
                 </ul>
             </div>
             <hr>
-            <a href="#"><i class="fa fa-sticky-note" aria-hidden="true" style="color:rgb(49, 128, 160);"></i> Attendance</a>
+            <div class="dropdown">
+                <a id="departmentsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-menu-desk mdl-navigation__link " href="#"><i class="fa fa-sticky-note" aria-hidden="true" style="color:rgb(49, 128, 160);  "></i> Attendance
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="departmentsDropdown">
+                    <li class="dropdown-submenu" style="position:relative; ">
+                        <a tabindex="-1" href="../attendance/today_attendance.html">Today's Attendance </a>
+                        <a tabindex="-1" href="../attendance/add_attendance.html">Add Attendance </a>
+                        <a tabindex="-1" href="../attendance/attendance_logs.html">Attendance Logs</a>
+                    </li>
+                </ul>
+            </div>
             <hr>
-            <a href="#"><i class="fa fa-sticky-note" aria-hidden="true" style="color:rgb(121, 123, 124);"></i> Assignments</a>
+            <div class="dropdown">
+                <a id="departmentsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-menu-desk mdl-navigation__link " href="#"><i class="fa fa-sticky-note" aria-hidden="true" style="color:rgb(121, 123, 124);"></i> Assignments
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="departmentsDropdown">
+                    <li class="dropdown-submenu" style="position:relative; ">
+                        <a tabindex="-1" href="../assignment/add_assign.html">Add Assignment </a>
+                        <a tabindex="-1" href="../assignment/comp_assign.html">Completed Assignment </a>
+                        <a tabindex="-1" href="../assignment/pending_assign.html">Pending Assignment</a>
+                    </li>
+                </ul>
+            </div>
             <hr>
             <a href="#"><i class="fa fa-sticky-note" aria-hidden="true" style="color:rgb(252, 194, 5);"></i> Result</a>
             <hr>
